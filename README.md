@@ -1,5 +1,6 @@
 # consume-api-python-demo
 Example project demonstrating how to consume open web APIs with Python
+![](preview.png)
 
 ## Introduction
 This project contains a simple Python3 example for working with an open API (in this case the [NASA API](https://api.nasa.gov/api.html#apod).

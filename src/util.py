@@ -26,7 +26,7 @@ class Util:
 		return urllib.request.urlretrieve(url, path)
 
 	# Write data to a file on disk
-	def write_json(data: dict, path: str) -> None:
+	def write_json(data: str, path: str) -> None:
 
 		out_file = open(path, 'w')
 		out_file.write(data)

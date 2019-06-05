@@ -1,6 +1,6 @@
 from src.util import Util
 from src.config import Config
-import json, io
+import json, io, os
 
 # An example API class
 class API:
@@ -26,5 +26,7 @@ class API:
 		json_data: str = json.JSONEncoder().encode(data)
 
 		# Download the image and write info to disk
+		if not os.path.exists('data/'):
+			os.makedirs('data/')
 		Util.download_file(image_url, 'data/' + image_filename)
 		Util.write_json(json_data, 'data/' + json_filename)
